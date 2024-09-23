@@ -1,0 +1,458 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+
+.banner video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover; 
+    z-index: -1; 
+}
+
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    z-index: 1; 
+}
+
+.banner-content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.banner-content h1 {
+    font-size: 100px;
+    margin: 0;
+}
+
+
+.banner video[muted] {
+    muted: true;
+}
+
+.aboutSection{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom, #000000, #350036);
+    color: white;
+    position: relative;
+}
+
+.aboutSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    pointer-events: none;
+}
+
+.aboutSection h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #fffffff3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutSection p{
+    text-wrap: pretty;
+    margin-top: 20px;
+    font-size: 30px;
+    width: 80%;
+    margin: 10px auto;
+    font-weight: 500;
+    padding: 20px;
+}
+
+
+.offerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offerItems{
+    width: 70%;
+    padding: 30px;
+}
+
+.offerItems h2{
+
+    margin-top: 50px;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #000000f3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.offerItem{
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.281);
+    margin: 10px;
+    border-radius: 10px;
+    width: 90%;
+
+}
+
+.offerItem h3{
+    font-size: 40px;
+    background: linear-gradient(to bottom, #000000f3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.offerItem p{
+    font-size: 20px;
+    margin: 0;
+}
+
+
+
+.videoHolder{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.videoHolder video{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.print-ex{
+    height: 100vh;
+    background-image: url('../img/print-ex-bg.webp');
+    background-size: cover;
+}
+
+.print-ex-content{
+    background-color: rgba(3, 3, 3, 0.637);
+    height: 100%;
+    width: 100%;
+}
+
+.print-ex-content h2{
+    text-align: center;
+    margin-top: 0px;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #fffffff3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 50px;
+}
+
+.cardHolder{
+    display: flex;
+    
+}
+
+.card{
+    width: 70%;
+    padding: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.281);
+    margin: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.card h3{
+    font-size: 30px;
+    background: linear-gradient(to bottom, #000000f3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card p{
+    font-size: 20px;
+    margin: 10px;
+    font-weight: 550;
+}
+
+.catalog{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to top, rgb(73, 3, 73), rgb(2, 0, 0));
+    color: white;
+    position: relative;
+}
+
+.catalog::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.catalog h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #fffffff3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.catalog p{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 80%;
+    margin: 10px auto;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+
+.catalog a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    background-color: #b500bb;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.catalog a:hover{
+    background-color: #b500bbcb;
+    color: white;
+}
+
+
+
+.contact{
+    padding: 20px;
+}
+
+.contact h2{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    font-size: 70px;
+    background: linear-gradient(to bottom, #000000f3, #b500bb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.contact p{
+    margin-top: 20px;
+    font-size: 30px;
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.contactContent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttons a{
+    width: fit-content;
+    padding: 10px;
+    height: fit-content;
+}
+
+.contactButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b500bb;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 30px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contactButton p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.contactButton img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contactButton:hover{
+    background-color: #b500bbcb;
+    
+}
+
+.malt{
+    text-align: center;
+}
+
+.malt a:hover{
+    text-decoration: none;
+    color: #b500bb;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px){
+    .banner{
+        height: 100vh;
+    }
+
+    .aboutSection{
+        height: 100%;
+    }
+
+    .aboutSection h2{
+        font-size: 50px;
+    }
+
+    .aboutSection p{
+        font-size: 20px;
+    }
+
+    .offerContent{
+        flex-direction: column;
+    }
+
+    .videoHolder{
+        display: none;
+    }
+
+    .offerContent h2{
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .offerItems{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .offerItem{
+        width: 80%;
+    }
+
+    .offerItem h3{
+        font-size: 30px;
+    }
+
+    .print-ex{
+        height: 100%;
+    }
+
+    .print-ex-content h2{
+        font-size: 50px;
+    }
+
+    .cardHolder{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .catalog{
+        height: 100%;
+        padding:100px 10px;
+    }
+
+    .catalog h2{
+        font-size: 50px;
+    }
+
+    .catalog p{
+        font-size: 20px;
+    }
+
+    .contact h2{
+        font-size: 50px;
+    }
+
+    .contact p{
+        font-size: 20px;
+    }
+
+    .contactContent{
+        flex-direction: column;
+    }
+
+    .contactButton{
+        padding: 10px 20px;
+    }
+
+    .contactButton p{
+        font-size: 15px;
+    }
+
+    .logo img{
+        width: 200px;
+        
+    }
+
+   
+
+}
+
+
+
+
